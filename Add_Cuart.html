@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bulma -->
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <title>Gestion_Cuarteleria</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar has-shadow is-white is-fixed-top ml-4">
+            <!-- logo -->
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="media/img/png-transparent-team-management-computer-icons-business-change-management-business-people-team-logo.png" alt="Site Logo" style="max-height: 70px;" class="py-2 px-2">
+              </a>
+              <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+            </div>
+        
+            <div class="navbar-menu" id="nav-links">
+              <div class="navbar-end">
+                <a href="Index.html" class="navbar-item has-text-black">Principal</a>
+                <a class="navbar-item has-text-black is-active" id="tdm">Cuarteleria</a>
+                <a href="" class="navbar-item has-text-black" >Autenticar</a>
+              </div>
+            </div>
+          </nav>
+        
+    </header>
+
+    <main>
+      <section class="section mt-6">
+        <div class="container">
+          <div class="columns is-variable">
+            <div class="column is-12-tablet">
+              <div class="tabs is-boxed">
+                <ul>
+                  <li class="is-active" data-target="Buscar-Estudiante">
+                    <a>Buscar Estudiante</a>
+                  </li>
+                  <li  data-target="Estudiante">
+                      <a>Resumen de estudiante</a>
+                  </li>
+                  <li  data-target="Add_Cuart">
+                    <a>Anadir Cuateleria</a>
+                  </li>
+                  <li data-target="Modificar_Cuart">
+                    <a>Modificar Cuarteleria</a>
+                  </li>
+                  <li data-target="Eliminar_Cuart">
+                    <a>Eliminar Cuarteleria</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="px-2" id="tab-content">
+                <div id="Buscar-Estudiante">
+                  <Form:get>
+                    <div id="Filtrar" class="mb-4">
+                      <div class="field has-addons is-horizontal">
+                        <!-- Filtrar Grupo-->
+                          <p class="control">
+                            <span class="select">
+                              <select>
+                                <option>Seleccionar</option>
+                                <option>2101</option>
+                                <option>2102</option>
+                                <option>2103</option>
+                                <option>2201</option>
+                                <option>2202</option>
+                                <option>2203</option>
+                                <option>2301</option>
+                                <option>2302</option>
+                                <option>2303</option>
+                                <option>2401</option>
+                                <option>2402</option>
+                                <option>2403</option>
+                              </select>
+                            </span>
+                          </p>
+                          <p class="control">
+                            <input class="input" type="text" placeholder="Grupo">
+                          </p>
+                          <p class="control">
+                            <a class="button is-primary">
+                              Filtrar
+                            </a>
+                          </p>
+                        <!-- Filtrar Edificio-->
+                          <p class="control">
+                            <span class="select">
+                              <select>
+                                <option>Seleccionar</option>
+                                <option>136100</option>
+                                <option>136200</option>
+                                <option>144100</option>
+                                <option>144200</option>
+                                <option>160100</option>
+                                <option>160200</option>
+                              </select>
+                            </span>
+                          </p>
+                          <p class="control">
+                            <input class="input" type="text" placeholder="Edificio">
+                          </p>
+                          <p class="control">
+                            <a class="button is-primary">
+                              Filtrar
+                            </a>
+                          </p>
+                        <!-- Filtrar Nombre-->
+                          <p class="control">
+                            <input class="input" type="text" placeholder="Nombre">
+                          </p>
+                          <p class="control">
+                            <a class="button is-primary">
+                              Filtrar
+                            </a>
+                          </p>
+                      </div>
+                    </div>
+                  </Form:get>
+                  <article class="tile is-child notification is-success">
+                    <p class="title has-text-centered">Listado De Estudiantes</p>
+                 </article>
+                 <div class="table-container">
+                     <table class="table is-striped is-hoverable mt-5" style="width:100%">
+                         <thead>
+                             <tr >
+                                 <th>Nombre</th>
+                                 <th>Edificio</th>
+                                 <th>Paso</th>
+                                 <th>Apto</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td>Tiger Nixon</td>
+                                 <td>136</td>
+                                 <td>1</td>
+                                 <td>02</td>
+                             </tr>
+                             <tr>
+                                 <td>Garrett Winters</td>
+                                 <td>122</td>
+                                 <td>2</td>
+                                 <td>04</td>
+                             </tr>
+                             <tr>
+                                 <td>Ashton Cox</td>
+                                 <td>136</td>
+                                 <td>2</td>
+                                 <td>05</td>
+                             </tr>
+                             <tr>
+                                 <td>Tiger Nixon</td>
+                                 <td>136</td>
+                                 <td>1</td>
+                                 <td>02</td>
+                             </tr>
+                             <tr>
+                                 <td>Garrett Winters</td>
+                                 <td>122</td>
+                                 <td>2</td>
+                                 <td>04</td>
+                             </tr>
+                             <tr>
+                                 <td>Ashton Cox</td>
+                                 <td>136</td>
+                                 <td>2</td>
+                                 <td>05</td>
+                             </tr>
+                             <tr>
+                                 <td>Tiger Nixon</td>
+                                 <td>136</td>
+                                 <td>1</td>
+                                 <td>02</td>
+                             </tr>
+                             
+                         </tbody>
+                         <tfoot>
+                             <tr>
+                                 <th>Nombre</th>
+                                 <th>Edificio</th>
+                                 <th>Paso</th>
+                                 <th>Apto</th>
+                             </tr>
+                         </tfoot>
+                     </table>
+                 </div>
+
+
+                </div>
+                <div id="Estudiante" class="is-hidden">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                          <figure class="image is-48x48">
+                            <img src="media/img/descarga.png" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-4">John Smith</p>
+                          <p class="subtitle is-6">@johnsmith</p>
+                        </div>
+                      </div>
+                  
+                      <div class="content">
+                        <table class="table is-striped is-hoverable mt-5" style="width:100%">
+                          <thead>
+                              <tr >
+                                  <th>Nombre</th>
+                                  <th>Edificio</th>
+                                  <th>Paso</th>
+                                  <th>Apto</th>
+                                  <th>Promedio</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Jhon Smith</td>
+                                  <td>136</td>
+                                  <td>1</td>
+                                  <td>02</td>
+                                  <td>Bien</td>
+                              </tr>
+                          </tbody>
+                        </table>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div id="Add_Cuart" class="is-hidden">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-48x48">
+                        <img src="media/img/descarga.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">John Smith</p>
+                      <p class="subtitle is-6">@johnsmith</p>
+                    </div>
+                  </div>
+                  <form action="" method="post" class="mt-6" id="From-Add">
+                    <div class="field is-horizontal columns is-multiline">
+                    <div class="field-label is-normal column is-2-desktop">
+                      <label class="label">Nombre y Apellidos</label>
+                    </div>
+                    <div class="field-body column is-4-desktop">
+                      <div class="field">
+                        <p class="control">
+                          <input id="Nombre_Add" class="input" type="text" placeholder="Nombre">
+                        </p>
+                      </div>
+                    </div>
+                    <div class="control column is-2-desktop">
+                      <p >
+                        <span class="select">
+                          <select>
+                            <option>Seleccionar</option>
+                            <option>Enero</option>
+                            <option>Febreo</option>
+                            <option>Marzo</option>
+                            <option>Abril</option>
+                            <option>Mayo</option>
+                            <option>Junio</option>
+                            <option>Julio</option>
+                            <option>Agosto</option>
+                            <option>Septiembre</option>
+                            <option>Octubre</option>
+                            <option>Noviembre</option>
+                            <option>Diciembre</option>
+                          </select>
+                        </span>
+                      </p>
+                    </div>
+                    <div>
+                      <div class="field is-horizontal column is-12-desktop">
+                        <div class="field-label is-normal">
+                          <label  class="label">Fecha</label>
+                        </div>
+                        <div class="field-body">
+                          <div class="field">
+                            <p class="control">
+                              <input id="Fecha_Add" class="input" type="text" placeholder="dd/mm/yyyy">
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="control column is-2-desktop">
+                      <p >
+                        <span class="select">
+                          <select>
+                              <option>Edificio</option>
+                              <option>136100</option>
+                              <option>136200</option>
+                              <option>144100</option>
+                              <option>144200</option>
+                              <option>160100</option>
+                              <option>160200</option>
+                          </select>
+                        </span>
+                      </p>
+                    </div>
+                    <div class="control column is-2-desktop">
+                      <p >
+                        <span class="select">
+                          <select>
+                            <option>Paso</option>
+                            <option>1</option>
+                            <option>2</option>
+                          </select>
+                        </span>
+                      </p>
+                    </div>
+                    <div class="control column is-2-desktop">
+                      <p >
+                        <span class="select">
+                          <select>
+                            <option>Apto</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                          </select>
+                        </span>
+                      </p>
+                    </div>
+                   </div>
+                   <div>
+                     <input id="Validar_Add" type="button" value="Enviar" class="button is-medium is-hover is-success is focused">
+                   </div>
+                    
+                  </form>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <script src="js/Cuart.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+</body>
+</html>
